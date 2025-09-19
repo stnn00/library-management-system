@@ -20,3 +20,16 @@ class Book:
     def __str__(self):
         """Method returns a formatted string of the Book."""
         return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}"
+    
+    def get_details(self):
+        """
+        Method returns book details as a dictionary.
+
+        Returns:
+            dict: A dictionary containing keys 'title', 'author', and 'isbn'.
+        """
+        return {
+            "title": self.title,
+            "author": self.author,
+            "isbn": self.isbn
+        }
