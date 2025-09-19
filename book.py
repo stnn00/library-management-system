@@ -33,3 +33,8 @@ class Book:
             "author": self.author,
             "isbn": self.isbn
         }
+
+
+if __name__ == "__main__":
+    test_book = Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078")
+    print(test_book)
