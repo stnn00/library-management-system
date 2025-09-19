@@ -16,3 +16,7 @@ class Book:
         self.title = title
         self.author = author
         self.isbn = isbn
+    
+    def __str__(self):
+        """Method returns a formatted string of the Book."""
+        return f"Title: {self.title}, Author: {self.author}, ISBN: {self.isbn}"
