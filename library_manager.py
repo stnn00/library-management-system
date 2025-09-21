@@ -1,9 +1,11 @@
 """
 library_manager.py
 
-Module for library management of Book objects.
-Provides functions to add books, list all books, and find books.
-Provides a command-line menu to display options to user.
+Main module for library management of Book objects.
+
+Provides:
+- Functions to add books, list all books, and find books.
+- Command-line interface for user interaction.
 """
 
 from book import Book
@@ -42,7 +44,7 @@ def list_books(library):
     
     print("\nLibrary Catalog:")
     for book in library:
-        print(f"- {book}")
+        print(f"- Title: {book.title}, Author: {book.author}, ISBN: {book.isbn}")
 
 def find_book(library, query):
     """
