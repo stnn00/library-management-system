@@ -1,10 +1,9 @@
 """
 library_manager.py
 
-Module with functions for library management of Book objects:
-- add_book: add a new book from user input
-- list_books: displays all books in library
-- find_book: search for a book with matching title or author
+Module for library management of Book objects.
+Provides functions to add books, list all books, and find books.
+Provides a command-line menu to display options to user.
 """
 
 from book import Book
@@ -87,33 +86,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""
-if __name__ == "__main__":
-    # Sample library list with Book objects
-    library = [
-        Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078"),
-        Book("The Hunger Games", "Suzanne Collins", "9780545229937")
-    ]
-
-    # Prompts user to add a book to library list
-    add_book(library)
-
-    # Prints all books in library
-    list_books(library)
-
-    # Print results of a test search for a title that does not exist
-    result = find_book(library, "I Am Number Four")
-    print(f"Searching for non-existing book title: {result}")
-
-    # Print results of a test search for a book with exact title
-    result = find_book(library, "The Great Gatsby")
-    print(f"Searching for existing book title: {result}")
-    
-    # Print results of a test search for case-insensitive matching title
-    result = find_book(library, "the great gatsby")
-    print(f"Searching for case-insensitive book title: {result}")
-
-    # Print results of a test search for case-insensitive matching author
-    result = find_book(library, "Suzanne collins")
-    print(f"Searching for case-insensitive book author: {result}")
-"""
