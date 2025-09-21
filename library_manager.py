@@ -1,5 +1,10 @@
 """
 library_manager.py
+
+Module with functions for library management of Book objects:
+- add_book: add a new book from user input
+- list_books: displays all books in library
+- find_book: search for a book with matching title or author
 """
 
 from book import Book
@@ -31,6 +36,9 @@ def list_books(library):
         print(book)
 
 def find_book(library, query):
+    """
+    This function searches for a book with matching title or author.
+    """
     query = query.lower()
     for book in library:
         if book.title.lower() == query or book.author.lower() == query:
