@@ -31,8 +31,9 @@ def list_books(library):
         print(book)
 
 def find_book(library, query):
+    query = query.lower()
     for book in library:
-        if book.title == query or book.author == query:
+        if book.title.lower() == query or book.author.lower() == query:
             return book
     return None
 
