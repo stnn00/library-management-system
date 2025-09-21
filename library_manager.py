@@ -33,4 +33,9 @@ def list_books(library):
 if __name__ == "__main__":
     library = [
         Book("The Great Gatsby", "F. Scott Fitzgerald", 9783257691078),
-        Book("
+        Book("The Hunger Games", "Suzanne Collins", 9780545229937)
+    ]
+
+    add_book(library)
+
+    list_books(library)
