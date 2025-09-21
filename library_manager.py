@@ -41,9 +41,6 @@ def find_book(library, query):
     This function searches for a book with matching title or author.
     """
     query = query.lower()
-
-    # Note: 'in' here instead of '==' would accept partial matches instead of exact
-    # if query in book.title.lower() or query in book.author.lower():
     for book in library:
         if book.title.lower() == query or book.author.lower() == query:
             return book
