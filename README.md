@@ -53,5 +53,4 @@ Instructions to set up and run the Library Management System:
    2. List all books.
    3. Find a book.
    4. Exit the program.
-
 4. **Type the number corresponding to your choice and press Enter.**
