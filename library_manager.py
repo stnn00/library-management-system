@@ -86,6 +86,9 @@ def main():
 
 
 if __name__ == "__main__":
+    main()
+"""
+if __name__ == "__main__":
     # Sample library list with Book objects
     library = [
         Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078"),
@@ -113,3 +116,4 @@ if __name__ == "__main__":
     # Print results of a test search for case-insensitive matching author
     result = find_book(library, "Suzanne collins")
     print(f"Searching for case-insensitive book author: {result}")
+"""
