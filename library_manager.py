@@ -49,8 +49,8 @@ def find_book(library, query):
 if __name__ == "__main__":
     # Sample library list with Book objects
     library = [
-        Book("The Great Gatsby", "F. Scott Fitzgerald", 9783257691078),
-        Book("The Hunger Games", "Suzanne Collins", 9780545229937)
+        Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078"),
+        Book("The Hunger Games", "Suzanne Collins", "9780545229937")
     ]
 
     # Prompts user to add a book to library list
