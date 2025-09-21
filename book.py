@@ -8,6 +8,8 @@ The Book class provides functionality to:
 - Retrieve book attributes as a dictionary.
 - Generate a formatted string representation.
 """
+
+
 class Book:
     """
     A class to store all book objects and represent a library system.
