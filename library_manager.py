@@ -7,7 +7,6 @@ Provides:
 - Functions to add books, list all books, and find books.
 - Command-line interface for user interaction.
 """
-
 from book import Book
 
 def add_book(library):
@@ -28,6 +27,7 @@ def add_book(library):
     library.append(new_book)
     print(f"Book '{title}' by {author} successfully added to the library.")
 
+
 def list_books(library):
     """
     This function prints the details of all books in the library.
@@ -45,6 +45,7 @@ def list_books(library):
     print("\nLibrary Catalog:")
     for book in library:
         print(f"- Title: {book.title}, Author: {book.author}, ISBN: {book.isbn}")
+
 
 def find_book(library, query):
     """
@@ -66,6 +67,7 @@ def find_book(library, query):
         if book.title.lower() == query or book.author.lower() == query:
             return book
     return None
+
 
 def main():
     """
