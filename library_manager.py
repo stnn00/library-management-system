@@ -30,6 +30,11 @@ def list_books(library):
     for book in library:
         print(book)
 
+def find_book(library, query):
+    for book in library:
+        if book.title == query or book.author == query:
+            return book
+    return None
 
 if __name__ == "__main__":
     library = [
@@ -40,3 +45,12 @@ if __name__ == "__main__":
     add_book(library)
 
     list_books(library)
+
+    result = find_book(library, "I Am Number Four")
+    print(result)
+
+    result = find_book(library, "The Great Gatsby")
+    print(result)
+    
+    result = find_book(library, "the great gatsby")
+    print(result)
