@@ -34,7 +34,7 @@ def list_books(library):
     
     print("\nLibrary Catalog:")
     for book in library:
-        print(book)
+        print(f"- {book}")
 
 def find_book(library, query):
     """
@@ -48,6 +48,41 @@ def find_book(library, query):
         if book.title.lower() == query or book.author.lower() == query:
             return book
     return None
+
+def main():
+    """Presents a menu to user with options using a while loop"""
+    my_library = [
+    Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078"),
+    Book("The Hunger Games", "Suzanne Collins", "9780545229937"),
+    Book("High Fidelity", "Nick Hornsby", "9781573225519"),
+    Book("The Boxcar Children", "Gertrude Chandler Warner", "9780593898239")
+    ]
+
+    while True:
+        print("Library Menu Options:")
+        print("1. Add a new book.")
+        print("2. List all books.")
+        print("3. Find a book.")
+        print("4. Exit the program.")
+
+        choice = input("Enter your choice (1-4): ")
+
+        if choice == "1":
+            add_book(my_library)
+        elif choice == "2":
+            list_books(my_library)
+        elif choice == "3":
+            query = input("Enter title or author to search: ")
+            result = find_book(my_library, query)
+            if result:
+                print(f"Book found: {result}")
+            else:
+                print(f"No book found matching '{query}'.")
+        elif choice == "4":
+            print("Exiting the program.")
+            break
+        else:
+            print(f"Invalid option '{choice}'. Try again.")
 
 
 if __name__ == "__main__":
