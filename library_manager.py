@@ -29,3 +29,8 @@ def list_books(library):
     print("\nLibrary Catalog:")
     for book in library:
         print(book)
+
+if __name__ == "__main__":
+    library = [
+        Book("The Great Gatsby", "F. Scott Fitzgerald", 9783257691078),
+        Book("
