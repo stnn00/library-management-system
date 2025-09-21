@@ -45,6 +45,7 @@ def find_book(library, query):
             return book
     return None
 
+
 if __name__ == "__main__":
     # Sample library list with Book objects
     library = [
