@@ -60,16 +60,16 @@ if __name__ == "__main__":
 
     # Print results of a test search for a title that does not exist
     result = find_book(library, "I Am Number Four")
-    print(result)
+    print(f"Searching for non-existing book title: {result}")
 
     # Print results of a test search for a book with exact title
     result = find_book(library, "The Great Gatsby")
-    print(result)
+    print(f"Searching for existing book title: {result}")
     
     # Print results of a test search for case-insensitive matching title
     result = find_book(library, "the great gatsby")
-    print(result)
+    print(f"Searching for case-insensitive book title: {result}")
 
     # Print results of a test search for case-insensitive matching author
     result = find_book(library, "Suzanne collins")
-    print(result)
+    print(f"Searching for case-insensitive book author: {result}")
