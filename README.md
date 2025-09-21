@@ -45,7 +45,7 @@ Instructions to set up and run the Library Management System:
 
 3. **Using the program**
 
-After running the program, a menu will appear:
+   After running the program, a menu will appear:
 
    ```text
    Library Menu Options:
