@@ -71,9 +71,9 @@ def find_book(library, query):
 
 def main():
     """
-    Presents a menu to user with options using a while loop.
+    Presents a menu to user in a loop, allowed the user to manage the library.
 
-    Functions:
+    Menu Options:
         1. Add a new book
         2. List all books
         3. Find a book by title or author
