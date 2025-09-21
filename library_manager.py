@@ -22,6 +22,7 @@ def add_book(library):
 
     new_book = Book(title, author, isbn)
     library.append(new_book)
+    print(f"Book '{title}' by {author} successfully added to the library.")
 
 def list_books(library):
     """
