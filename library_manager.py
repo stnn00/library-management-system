@@ -12,8 +12,11 @@ def add_book(library):
     """
     Prompts user to input book details and adds a new Book object to the library.
 
-    Parameters:
-    library (list): List of Book objects in the library
+    Args:
+        library (list): The list of Book objects in the library
+
+    Returns:
+        None
     """
     title = input("Enter in the title of the book: ")
     author = input("Enter in the author of the book: ")
@@ -26,6 +29,12 @@ def add_book(library):
 def list_books(library):
     """
     This function prints the details of all books in the library.
+
+    Args:
+        library (list): The list of book objects in the library system.
+
+    Returns:
+        None
     """
     if not library:
         print("There are currently no books in the library.")
@@ -38,6 +47,14 @@ def list_books(library):
 def find_book(library, query):
     """
     This function searches for a book with matching title or author.
+
+    Args:
+        library (list): The list of Book objects to search
+        query (str): The title or author to search for (case-insensitive.)
+
+    Returns:
+        Book: Returns the first Book object that matches the query by title or author.
+        None: Returns None if no match is found.
     """
     query = query.lower()
 
@@ -49,7 +66,15 @@ def find_book(library, query):
     return None
 
 def main():
-    """Presents a menu to user with options using a while loop"""
+    """
+    Presents a menu to user with options using a while loop.
+
+    Functions:
+        1. Add a new book
+        2. List all books
+        3. Find a book by title or author
+        4. Exit the program
+    """
     my_library = [
     Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078"),
     Book("The Hunger Games", "Suzanne Collins", "9780545229937"),
