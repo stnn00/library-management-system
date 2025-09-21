@@ -54,3 +54,8 @@ Instructions to set up and run the Library Management System:
    3. Find a book.
    4. Exit the program.
 4. **Type the number corresponding to your choice and press Enter.**
+   - Add a new book: Choose option `1` and enter the book's title, author, and ISBN.
+   - View entire library catalog: Choose option `2` to display all books.
+   - Find a book: Choose option `3` and enter a title or author to search.
+   - Exit the program: Choose option `4` to close the application.
+<small>Tip: Any added books will only be temporarily stored for the current session.</small>
