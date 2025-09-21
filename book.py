@@ -1,14 +1,16 @@
 """
 book.py
 
-Module to define Book class to represent books in a library.
+This module to define Book class to represent books in a library.
 
-Implements methods to initialize book objects, fetch details,
-and returns formatted string representation.
+The Book class provides functionality to:
+- Create and initialize each Book object.
+- Retrieve book attributes as a dictionary.
+- Generate a formatted string representation.
 """
 class Book:
     """
-    A class to store all book objects in the system.
+    A class to store all book objects and represent a library system.
     
     Attributes:
         title (str): The title of the book.
@@ -31,7 +33,7 @@ class Book:
     
     def __str__(self):
         """
-        Method returns a formatted string of the Book.
+        Returns a formatted string of the Book.
 
         Returns:
             str: Formatted string including title, author, and ISBN.
@@ -40,7 +42,7 @@ class Book:
     
     def get_details(self):
         """
-        Method returns book details as a dictionary.
+        Returns book details as a dictionary.
 
         Returns:
             dict: A dictionary containing the book's 'title', 'author', and 'isbn'.
