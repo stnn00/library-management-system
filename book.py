@@ -41,3 +41,4 @@ if __name__ == "__main__":
     # Prints test result for Book object
     test_book = Book("The Great Gatsby", "F. Scott Fitzgerald", "9783257691078")
     print(test_book)
+    
