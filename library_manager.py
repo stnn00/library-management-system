@@ -55,3 +55,6 @@ if __name__ == "__main__":
     
     result = find_book(library, "the great gatsby")
     print(result)
+
+    result = find_book(library, "Suzanne collins")
+    print(result)
