@@ -38,7 +38,7 @@ Instructions to set up and run the Library Management System:
 
 2. **Run the program**
 
-Start library management system by running:
+   Start library management system by running:
 
    ```bash
    python library_manager.py
