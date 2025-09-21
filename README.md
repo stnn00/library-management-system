@@ -47,11 +47,11 @@ Start library management system by running:
 
 After running the program, a menu will appear:
 
-```text
-Library Menu Options:
-1. Add a new book.
-2. List all books.
-3. Find a book.
-4. Exit the program.
+   ```text
+   Library Menu Options:
+   1. Add a new book.
+   2. List all books.
+   3. Find a book.
+   4. Exit the program.
 
 4. **Type the number corresponding to your choice and press Enter.**
