@@ -1,5 +1,7 @@
 """
 book.py
+
+Module to define Book class to represent books in a library.
 """
 class Book:
     """A class to store all book objects in the system."""
