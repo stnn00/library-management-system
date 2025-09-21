@@ -17,3 +17,15 @@ def add_book(library):
 
     new_book = Book(title, author, isbn)
     library.append(new_book)
+
+def list_books(library):
+    """
+    This function prints the details of all books in the library.
+    """
+    if not library:
+        print("There are currently no books in the library.")
+        return
+    
+    print("\nLibrary Catalog:")
+    for book in library:
+        print(book)
