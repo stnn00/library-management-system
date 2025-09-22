@@ -15,7 +15,7 @@ Users can interact with a pre-defined sample library to test and explore the pro
 
 ## Demonstration
 
-Video on YouTube to demonstrate and explain Python modules (4:02)
+Video on YouTube to demonstrate and explain Python modules (4:01)
 
 - **[https://youtu.be/W6O8A-IJmDY](https://youtu.be/W6O8A-IJmDY)**
 
